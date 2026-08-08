@@ -741,7 +741,7 @@ function _G.ToggleFakeHeadless(state)
 
     fakeHeadlessConnection = RunService.RenderStepped:Connect(function()
         local character = Players.LocalPlayer and Players.LocalPlayer.Character
-        if character me then
+        if character then
             applyHeadless(character)
         end
     end)
